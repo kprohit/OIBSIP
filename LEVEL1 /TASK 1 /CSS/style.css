@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.kp {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border:2px solid red; */
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 170px;
+}
+
+
+.logo1 {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 108px;
+}
+
+ul {
+    text-align: right;
+    /* border:2px solid red; */
+    /* margin-right: 70px; */
+    /* text-decoration: none; */
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    margin: 10px 31px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 3px;
+    font-size: 21px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nav li a::before {
+    content: '';
+    width: 0;
+    height:fit-content;
+
+    background-color: cyan;
+    /* transform:; */
+    /* transition-timing-function: ease-out; */
+    position: absolute;
+    left: 2px;
+    transition: 1.5s;
+    z-index: -1;
+    bottom: -3px;
+}
+
+.nav li a:hover:before {
+    width: 100%; height: 100%;
+}
+
+.row {
+    display: flex;
+    float: right;
+    flex-shrink: 10;
+}
+
+.pic1 {
+    display: block;
+    height: 455px;
+    margin: -20px 144px;
+
+}
+
+.pic2 {
+    top: 65vh;
+    width: 255px;
+    /* height: 100px; */
+    position: absolute;
+    border-radius: 10px;
+    /* bottom: 1000px; */
+
+    right: 400px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+    position: absolute;
+    top: 40vh;
+    display: inline;
+    left: 152px;
+}
+
+.line h1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    /* text-transform: capitalize; */
+
+}
+
+.line a {
+    display: inline-block;
+    margin: 38px 1px;
+    background-color: #d9f688;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 22px;
+    font-size: 17px;
+    border-radius: 23px;
+  
+}
